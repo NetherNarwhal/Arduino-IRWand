@@ -1,5 +1,5 @@
 # Arduino-IRWand
-Simple Arduino project that allows a LED to be triggered by an IR blaster wand. The wand could easily trigger something other than an LED, but that os going to depend greatly on what hardware you have at hand.
+Simple Arduino project that allows a LED to be triggered (turned off and on) by an IR blaster wand. The wand could easily trigger something other than a LED, but that part is left up to you.
 
 ##Usage
 This sketch leverages [mpflaga's branch](https://github.com/mpflaga/Arduino-IRremote) of the [IRremote library](https://github.com/shirriff/Arduino-IRremote). This branch supports the specific codes/decodes of the wands. The wands themselves are from a chain of hotels for a quest game, but any IR blaster could be used if it follows the same format.
