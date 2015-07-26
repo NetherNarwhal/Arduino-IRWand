@@ -137,6 +137,7 @@ void loop() {
           Serial.print(results.value);
           Serial.print(" detected. Magnitude=");
           Serial.println(results.magiquestMagnitude);
+//          dump(&results);
         #endif
         handleWand(results.value);
       } else {
@@ -164,8 +165,7 @@ void loop() {
  */
 #ifdef DEBUG
 void dump(decode_results *results) {
-  Serial.print("Unknown encoding: ");
-  Serial.print("value=");
+  Serial.print("Unknown encoding: value=");
   Serial.print(results->value);
   Serial.print(" (");
   Serial.print(results->bits, DEC);
